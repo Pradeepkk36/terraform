@@ -10,16 +10,16 @@ resource "aws_security_group" "allow_tls" {
   description = "allow TLS inbound and outbound rules"
 
   ingress {
-    from_port = var.ingress_from_port
-    to_port   = var.ingress_to_port
-    protocol  = "tcp"
+    from_port   = var.ingress_from_port
+    to_port     = var.ingress_to_port
+    protocol    = "tcp"
     cidr_blocks = var.cidr_blocks
   }
 
   egress {
-    from_port = 0
-    to_port   = 0
-    protocol  = "-1"
+    from_port   = var.egress_from_port
+    to_port     = var.egress_to_port
+    protocol    = "-1"
     cidr_blocks = var.cidr_blocks
   }
 
