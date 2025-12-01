@@ -1,4 +1,4 @@
-#string type variable
+#string type variables
 variable "ami_id" {
   type    = string
   default = "ami-09c813fb71547fc4f"
@@ -11,7 +11,7 @@ variable "instance_type" {
   description = "default demo instance type"
 }
 
-# map type varible
+# map type varibles
 variable "common_tags" {  
   type = map(any)
   default = {
@@ -20,7 +20,7 @@ variable "common_tags" {
   }
 }
 
-#number type variable
+#number type variables
 variable "ingress_from_port" {
     type = number
     default = 22
@@ -33,7 +33,7 @@ variable "ingress_to_port" {
     description = "allowed ssh port for ingress"
 }
 
-#list type variable
+#list type variables
 variable "cidr_blocks" {
     type = list
     default = [
