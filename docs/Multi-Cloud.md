@@ -1,5 +1,7 @@
 # **Terraform: Your Universal Infrastructure Connector**
 
+<img src="./icons/Terraform_Universal_Infrastructure_Connector.png" width="45" alt="eng" />
+
 ## **Multi-Cloud & Hybrid Infrastructure Orchestration**
 
 ### **Terraform's Multi-Cloud Architecture**
