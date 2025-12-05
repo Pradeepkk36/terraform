@@ -58,6 +58,20 @@ Terraform is a single binary file, making it relatively easy to install. Below a
 
 *(Note: These instructions assume you have basic terminal/command prompt access and administrative privileges).*
 
+### Windows (Using Chocolatey)
+
+While you can download the binary manually and add it to your PATH, using a package manager like Chocolatey is easier to maintain.
+
+1.  Open PowerShell as an Administrator.
+2.  Run the install command:
+    ```powershell
+    choco install terraform
+    ```
+3.  Verify installation (you may need to restart your shell):
+    ```powershell
+    terraform -version
+    ```
+
 ### macOS (Using Homebrew)
 
 If you use a Mac, the easiest way is via Homebrew.
@@ -73,20 +87,6 @@ If you use a Mac, the easiest way is via Homebrew.
     ```
 4.  Verify installation:
     ```bash
-    terraform -version
-    ```
-
-### Windows (Using Chocolatey)
-
-While you can download the binary manually and add it to your PATH, using a package manager like Chocolatey is easier to maintain.
-
-1.  Open PowerShell as an Administrator.
-2.  Run the install command:
-    ```powershell
-    choco install terraform
-    ```
-3.  Verify installation (you may need to restart your shell):
-    ```powershell
     terraform -version
     ```
 
