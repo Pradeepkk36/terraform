@@ -3,8 +3,8 @@ resource "aws_instance" "count_base_demo" {
   ami                    = local.ami_id
   vpc_security_group_ids = aws_security_group.allow_tls[*].id
   instance_type          = local.instance_type
-   key_name               = aws_key_pair.ssh_pub_key.key_name
-  tags                   = {
+  key_name               = aws_key_pair.ssh_pub_key.key_name
+  tags = {
     Name = "${var.environment}-demo-instance-${count.index}"
   }
   provisioner "remote-exec" {
@@ -32,9 +32,9 @@ resource "aws_instance" "count_base_demo" {
 
 resource "aws_security_group" "allow_tls" {
   #name        = "allow_firewall"
-  name_prefix = "allow_firewall_"  # AWS will append unique suffix
+  name_prefix = "allow_firewall_" # AWS will append unique suffix
   description = "allowed inbound and outbound rules"
-  
+
   count = length(var.inbound_ports)
   ingress {
     from_port   = var.inbound_ports[count.index]
