@@ -34,3 +34,12 @@ variable "ssh_key_path" {
   description = "Path to SSH public key"
   default     = "C:/Users/User/devops/ssh-key"
 }
+
+variable "domain_name" {
+  default = "er-devops.space"
+}
+
+variable "host_zone_id" {
+  default = "Z04820752CVWNI0DTZNQO"
+  
+}
