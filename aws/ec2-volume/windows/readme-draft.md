@@ -1,8 +1,58 @@
-Windows instances
+<!-- Parent Tab -->
+<details> <summary><h3>Windows instances</h3></summary> </details>
+
 Use one of the following methods to extend the file system on a Windows instance.
 
+<table>
+<tr>
+<td>
 
-Disk Management utility
+**Tab 1**  
+Content for Tab 1
+
+</td>
+<td>
+
+**Tab 2**  
+Content for Tab 2
+
+</td>
+</tr>
+</table>
+
+<!-- Parent Tab -->
+<details>
+<summary>Windows instances</summary>
+
+Content for **Parent Tab 1**.
+
+<!-- Child Tab -->
+<details>
+<summary>Child Tab 1.1</summary>
+
+Content for **Child Tab 1.1**.
+
+</details>
+
+<details>
+<summary>Child Tab 1.2</summary>
+
+Content for **Child Tab 1.2**.
+
+</details>
+
+</details>
+
+
+[Go to Tab 1](#Disk-Management-utility) | [Go to Tab 2](#tab-2)
+
+### Disk Management utility
+Content for Tab 1
+
+### Tab 2
+Content for Tab 2
+
+
 
 **To extend a file system using Disk Management**  
 1. Before extending a file system that contains valuable data, it is a best practice to create a snapshot of the volume that contains it in case you need to roll back your changes. For more information, see Create Amazon EBS snapshots.
@@ -31,3 +81,4 @@ Disk Management utility
 <img width="633" height="300" alt="image" src="https://github.com/user-attachments/assets/d8c0133c-519e-4f67-b3cb-5416f63450f0" />
 
 7. If you increase the size of an NVMe volume on an instance that does not have the AWS NVMe driver, you must reboot the instance to enable Windows to see the new volume size. For more information about installing the AWS NVMe driver, see AWS NVMe drivers.
+
