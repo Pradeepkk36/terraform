@@ -5,19 +5,19 @@ resource "aws_instance" "ec2-volume" {
   key_name               = local.key_name
   tags                   = local.common_tags
   root_block_device {
-    volume_size           = 25    # The size of the volume in GiB
+    volume_size           = 50    # The size of the volume in GiB
     volume_type           = "gp2" # The volume type (e.g., gp2, gp3, io1, etc.)
     delete_on_termination = true  # Whether the volume should be deleted on instance termination
     # encrypted             = true  # Enable volume encryption
   }
 
-  ebs_block_device {
+/*   ebs_block_device {
     device_name           = "/dev/sdf" # The device name to mount in the OS
     volume_size           = 10         # Sets the additional volume size to 100 GiB
     volume_type           = "gp3"
     delete_on_termination = true # Optional: deletes the volume when the instance is terminated
   }
-
+ */
 }
 
 resource "aws_key_pair" "ssh_key" {
